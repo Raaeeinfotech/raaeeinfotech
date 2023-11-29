@@ -249,7 +249,7 @@ h1,h2,h3,h4,h5,h6,p,small,p{
     justify-content: center;
     background: #FFFFFF !important;
     border-radius: 50px;
-    border: 1px dashed rgb(14, 46, 80) !important;
+/*     border: 1px dashed rgb(14, 46, 80) !important; */
 }
 
 
