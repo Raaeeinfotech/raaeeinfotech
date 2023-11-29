@@ -50,11 +50,12 @@
         }
         
         .container-xxl{
-            position: relative;
+            position: absolute;
             margin-top: 180px;
         }
         .container-fluid {
-            position: relative;
+            display: none;
+            position: absolute;
         }
         h1,h3,h4,h5,h6{
             color: white;
@@ -437,8 +438,11 @@
         // Function to start the video
         function startVideo() {
             var video = document.getElementById("myVideo");
-            video.style.display = "block"; // Show the video
             video.play(); // Start video playback
+            video.addEventListener("playing", function() {
+                var content = document.querySelector(".container-fluid");
+                content.style.display = "block"; // Display content after video starts playing
+            });
         }
     </script>
     <!-- Template Javascript -->
