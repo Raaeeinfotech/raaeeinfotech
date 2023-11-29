@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Makaan - Real Estate HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+        }
+        #google_translate_element {
+            position: relative;
+            top: 20px; /* Adjust top position */
+            right: 20px; /* Adjust right position */
+            z-index: 9999; /* Set a high z-index to ensure it appears above other elements */
+        }
+       
+
+        /* Ensure the dropdown button is visible above the video */
+        .goog-te-banner-frame.skiptranslate {
+            position: relative;
+            z-index: 9999;
+        }
+
+        .body {
+            position: fixed;
+            top: 0;
+            background: transparent;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            
+        }
+        
+        .container-xxl{
+            position: relative;
+            margin-top: 80px;
+            
+        }
+        .container-fluid {
+            position: relative;
+        }
+        .h1,.h2,.h3,.h4,.h5,.h6{
+            color: white;
+        }
+        .mb-3{
+            color: white;
+        }
+        p{
+            color: white;
+            font-size: large;
+            text-align: justify;
+        }
+        small{            
+            color: white;
+        } 
+        
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <video autoplay muted loop id="myVideo">
+        <source src="videos/hong_kong.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div id="google_translate_element">
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/main.jpg" alt="Icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <div class="text-center py-3">
+                        <h2 class=" " style="color: rgb(14, 46, 80); margin-top: 1rem;">RAAEE INFOTECH<br>
+                            <p style="color: purple; font-size: 12px;text-align: center;">Conquering the Advertising Universe</p>
+                        </h2>
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link active">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="property-list.html" class="dropdown-item">Tele-Marketing</a>
+                                <a href="property-type.html" class="dropdown-item">Social Media Marketing</a>
+                                <a href="property-agent.html" class="dropdown-item">Email Marketing</a> 
+                            <a href="customer-service.html" class="dropdown-item">Customer Services</a>
+                                <!-- <a href="property-agent.html" class="dropdown-item">Email Marketing</a>  -->
+                            </div>
+                        </div>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Error</a>
+                            </div>
+                        </div> -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <!-- <div class="col-md-2 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">Find A <span class="text-primary">Perfect Home</span> To Live With Your Family</h1>
+                    <p class="animated fadeIn mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet
+                        sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
+                </div> -->
+                <div class="col-md-12 animated fadeIn">
+                    <!-- <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                        </div>
+                    </div> -->
+                    <!-- <br><br><br><br> -->
+                   
+                </div>
+            </div>
+            
+        </div>
+        <!-- Header End -->
+
+
+        <div class="container-xxl py-5 ">
+            <div class="container">
+                <h1 class="mb-3">About Us</h1>
+                <div class=" rounded p-3">
+                    <div class=" rounded p-4">
+                        <div class="row g-5 align-items-center">
+                            <!-- <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded w-100" src="img/call-to-action.jpg" alt="">
+                            </div> -->
+                            <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="mb-4">
+                                    <h1 class="mb-3">RAAEE INFOTECH</h1>
+                                    <p >Unlocking B2B Success with Raaee Infotech: Powering Your Advertising Growth.</p>
+                                    <p >
+                                        Welcome to Raaee Infotech, a leading B2B company specializing in lead and demand generation solutions.</p>
+
+                                    <p>  The word ‘Raaee’ comes from a Japanese origin background that translates to ‘Trust’.</p>
+
+                                    <p>    With a proven track record of success, we empower businesses to unlock their growth potential by connecting them with high-quality leads and driving demand for their products and services.</p>
+
+                                    <p>    At Raaee Infotech, we understand that the key to sustainable business growth lies in effective lead generation strategies. We leverage our expertise in data-driven marketing and cutting-edge technologies to help our clients reach their target audience, engage with prospects, and convert them into valuable customers.</p>
+
+                                    <p>    Our team of seasoned professionals brings a wealth of experience in B2B marketing and sales. We work closely with our clients to understand their unique business goals and challenges, allowing us to develop customized lead generation strategies tailored to their specific needs. By combining our deep industry knowledge with advanced analytics and automation tools, we ensure that our clients receive the highest quality leads that have a genuine interest in their offerings.</p>
+
+                                    <p>    We take pride in our commitment to data accuracy and quality. Our meticulous data acquisition processes and rigorous data cleansing techniques enable us to provide our clients with reliable and up-to-date information. We continuously update and enrich our database to ensure that our clients have access to the most relevant and actionable insights.</p>
+
+                                    <p>    Transparency and accountability are at the core of our business values. We believe in building long-term partnerships with our clients based on trust and mutual success. Our team works closely with clients, providing regular reports and performance metrics to demonstrate the effectiveness of our lead and demand generation campaigns.</p>
+
+                                    <p>    Partner with Raaee Infotech and experience the power of targeted lead generation and demand generation strategies. Let us help you drive business growth, increase your revenue, and stay ahead of the competition in today’s dynamic B2B marketplace. Contact us today to learn more about how we can transform your business.
+                                    </p>
+                                    <p>
+                                        We eagerly anticipate your arrival at our workshop of your Revenue accelerator.
+                                    </p>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Team</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+
+       
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>7850, County Road 172, Alvin TX, 77511 United States</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Office no. 203, Ideal Landmark, Viman Nagar Rd, Near Joggers Park, Viman Nagar, Pune, Maharashtra 411014</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91-9209717424</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@raaeeinfotech.com</p>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="property-list.html">Our Services</a>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <!-- <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a> -->
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <a href=""><img class="img-fluid" src="img/raaee_logo.png" style="height: 300px; width: 600px;" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Footer End -->
+        
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Google Translate API Script -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Google Translate Widget Initialization -->
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,de', // Include the languages you want to support
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+</body>
+
+</html>
