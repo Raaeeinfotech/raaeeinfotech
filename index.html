@@ -88,9 +88,9 @@
         </div>
         
         <!-- Spinner End -->
-        <video autoplay muted loop id="myVideo">
-            <source src="videos/office1.mp4" type="video/mp4" preload="auto" loop muted autoplay>
-            Your browser does not support HTML5 video.
+        <video id="background-video" autoplay muted loop id="myVideo" preload="metadata" loop muted autoplay>
+            <source src="videos/office1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
 
         <!-- Navbar Start -->
@@ -432,12 +432,10 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js/counterup.js"></script>
     <script>
-        $(document).ready(function($) {
-        $('.count-number').counterUp({
-            delay: 10,
-            time: 10000
-        });
-    });
+    window.onload = function() {
+        var video = document.getElementById("background-video");
+        video.load(); // Start loading the video
+    }
     </script>
     
 
