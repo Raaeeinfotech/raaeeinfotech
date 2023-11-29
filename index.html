@@ -80,7 +80,7 @@
     </style>
 </head>
 
-<body>
+<body onload="startVideo()">
         <!-- Spinner End -->
         <video autoplay muted loop id="myVideo">
             <source src="videos/office1.mp4" type="video/mp4">
@@ -433,6 +433,14 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js/counterup.js"></script>
+    <script>
+        // Function to start the video
+        function startVideo() {
+            var video = document.getElementById("myVideo");
+            video.style.display = "block"; // Show the video
+            video.play(); // Start video playback
+        }
+    </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
