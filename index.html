@@ -90,7 +90,7 @@
         </div>
 
         <!-- Spinner End -->
-        <video id="myVideo">
+        <video id="myVideo" autoplay muted loop>
             <source src="videos/office1.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
@@ -434,15 +434,20 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js/counterup.js"></script>
     <script>
-        // Function to start the video
-        function startVideo() {
-            var video = document.getElementById("myVideo");
-            video.play(); // Start video playback
-            video.addEventListener("playing", function() {
-                var content = document.querySelector(".container-fluid");
-                content.style.display = "block"; // Display content after video starts playing
-            });
-        }
+        // Function to hide spinner and display video when it's loaded
+        var spinner = document.getElementById("spinner");
+        var video = document.getElementById("myVideo");
+
+        video.addEventListener("canplaythrough", function() {
+            spinner.style.display = "none"; // Hide the spinner
+            video.style.display = "block"; // Display the video
+        });
+
+        // If the video doesn't load after a certain time (e.g., 10 seconds), hide the spinner
+        setTimeout(function() {
+            spinner.style.display = "none";
+            video.style.display = "block";
+        }, 10000); // 10 seconds (adjust as needed)
     </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
