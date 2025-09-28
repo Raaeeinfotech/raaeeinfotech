@@ -443,6 +443,77 @@
     </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <style>
+    #cookieConsentBox {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        background: #f5f5f5;
+        border: 1px solid #ccc;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        z-index: 9999;
+        font-family: Arial, sans-serif;
+        display: none;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 6px;
+    }
+
+    #cookieConsentBox p {
+        margin: 0 0 10px;
+        color: #333;
+    }
+
+    #cookieConsentBox button {
+        margin-right: 10px;
+        padding: 8px 14px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    #acceptCookies {
+        background-color: #4caf50;
+        color: white;
+    }
+
+    #declineCookies {
+        background-color: #f44336;
+        color: white;
+    }
+</style>
+
+<div id="cookieConsentBox">
+    <p>This website uses cookies to enhance the user experience. Do you accept cookies?</p>
+    <button id="acceptCookies">Accept</button>
+    <button id="declineCookies">Decline</button>
+</div>
+
+<script>
+    // Show consent box if not already accepted/declined
+    window.addEventListener('load', function () {
+        const consent = localStorage.getItem('cookieConsent');
+        if (!consent) {
+            document.getElementById('cookieConsentBox').style.display = 'block';
+        }
+    });
+
+    // Accept
+    document.getElementById('acceptCookies').addEventListener('click', function () {
+        localStorage.setItem('cookieConsent', 'accepted');
+        document.getElementById('cookieConsentBox').style.display = 'none';
+        // You can trigger scripts here if needed
+    });
+
+    // Decline
+    document.getElementById('declineCookies').addEventListener('click', function () {
+        localStorage.setItem('cookieConsent', 'declined');
+        document.getElementById('cookieConsentBox').style.display = 'none';
+    });
+</script>
 </body>
 
 </html>
+
